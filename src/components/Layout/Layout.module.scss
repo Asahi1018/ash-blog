@@ -1,6 +1,12 @@
 @use 'src/styles/mixin/mq' as *;
 
-
+.global_container {
+    position: relative;
+    width: 100vw;
+    max-width: 1140px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
 
 .mask {
     position: fixed;
@@ -12,6 +18,9 @@
     opacity: 0.5;
     z-index: 100;
     cursor: pointer;
+    @include mq(lg) {
+        display: none;
+    }
 }
 .main {
     position: absolute;

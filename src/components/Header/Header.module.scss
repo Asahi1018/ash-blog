@@ -11,6 +11,9 @@
     @include mq(md) {
         height: 70px;
     }    
+    @include mq(lg) {
+        position: absolute;
+    }    
 }
 
 .btn {
@@ -25,6 +28,9 @@
     cursor: pointer;
     @include mq(md) {
         height: 70px;
+    }
+    @include mq(lg) {
+        position: absolute;
     }
 }
 

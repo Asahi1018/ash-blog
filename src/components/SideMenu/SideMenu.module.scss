@@ -10,10 +10,16 @@
     transform: translateX(-200px);
     transition: all 0.5s;
     font-size: 25px;
-    @include mq() {
+    @include mq(md) {
         top: 70px;
         width: 200px;
         font-size: 30px;
+    }
+    @include mq(lg) {
+        height: 400px;
+        transition: all 0.7s;
+        transform: translateX(0) translateY(-1200px);
+        z-index: 200;
     }
 }
 .nav {
@@ -36,8 +42,6 @@
 .open {
     &.aside {
         transform: translateX(0);
-
-
         @for $i from 1 through 30 {
             li:nth-child(#{$i}) {
                 transition-delay: $i * 0.07s;
