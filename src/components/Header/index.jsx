@@ -11,7 +11,7 @@ const Header = () => {
                 <span className={styles.btnSpan}></span>
                 <span className={styles.btnSpan}></span>
             </button>
-            <Link href="/"><h1 className={styles.title}>Ash Web App</h1></Link>
+            <h1 className={styles.title}><Link href="/">Ash Web App</Link></h1>
         </div>
     )
 
