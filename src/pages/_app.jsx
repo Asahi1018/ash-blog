@@ -1,6 +1,6 @@
-import '../styles/globals.scss';
-import Layout from '../components/Layout/Layout'
-import {MenuOpenProvider} from '../context/MenuOpenContext'
+import 'src/styles/globals.scss';
+import Layout from 'src/components/Layout'
+import {MenuOpenProvider} from 'src/context/MenuOpenContext'
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -1,7 +1,7 @@
-import { client } from '../../../libs/client'
+import { client } from 'libs/client'
 import Link from 'next/link'
-import Time from '../../components/Time/Time'
-import styles from '../../styles/blog.module.scss'
+import Time from 'src/components/Time'
+import styles from 'src/styles/blog.module.scss'
 
 
 export const getStaticPaths = async () => {

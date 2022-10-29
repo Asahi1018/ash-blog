@@ -1,9 +1,8 @@
 import styles from './Layout.module.scss'
-import {useMenuOpen,useMenuOpDispatch} from '../../context/MenuOpenContext'
+import {useMenuOpen,useMenuOpDispatch} from 'src/context/MenuOpenContext'
 
-import SideMenu from '../SideMenu/SideMenu'
-import Header from '../Header/Header'
-import Head from 'next/head'
+import SideMenu from 'src/components/SideMenu'
+import Header from 'src/components/Header'
 
 const Layout =  ({children}) => {
     const menuOpen = useMenuOpen(); 

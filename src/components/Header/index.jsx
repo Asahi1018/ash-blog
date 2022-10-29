@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from './Header.module.scss'
-import {useMenuOpen,useMenuOpDispatch} from '../../context/MenuOpenContext'
+import {useMenuOpen,useMenuOpDispatch} from 'src/context/MenuOpenContext'
 const Header = () => {
     const openMenu = useMenuOpen();
     const dispatch = useMenuOpDispatch();
