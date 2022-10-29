@@ -2,6 +2,7 @@
     background-color: black;
     color: white;
     & .h1 {
+        white-space: pre-wrap;
         border: 2px dotted white;
     }
 }
