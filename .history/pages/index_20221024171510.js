@@ -1,0 +1,38 @@
+import {client} from '../libs/client'
+import Link from 'next/link'
+
+export const getStaticProps = async (context) => {
+  const data = await client.get({endpoint:"blog"});
+  // console.log();
+  return {
+    props:{
+      blog:data,
+    }
+  }
+}
+
+export default function Home({blog}) {
+  return (
+    <>
+    <aside>
+      <nav>
+        <ul>
+          <li>list1</li>
+          <li>list2</li>
+          <li>list3</li>
+          <li>list4</li>
+          <li>list5</li>
+        </ul>
+      </nav>
+    </aside>
+    <main style={styles.body}>
+    {blog.contents.map(_blog => {
+     return (  <li key={_blog.id}>
+        <Link href={`posts/${_blog.id}`} >{_blog.title}</Link>
+      </li>)
+    })}
+    </main>
+    </>
+
+  )
+}

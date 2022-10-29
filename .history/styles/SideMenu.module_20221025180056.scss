@@ -1,0 +1,68 @@
+.aside {
+    width: 30%;
+    height: 100%;
+    background-color: red;
+    position: fixed;
+    
+}
+.nav {
+    height: 100%;
+}
+.ul {
+    display: inline-block;
+    height: 4000px;
+    margin-top: 30px;
+}
+
+
+
+.btn {
+    border-radius: 10%;
+    border: none;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btnSpan {
+    display: block;
+    background-color: black;
+    opacity: 0.7;
+    width: 30px;
+    height: 2px;
+    margin: 0 auto 4px auto;
+    transition: 0.7s;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0;        
+    }
+    
+    
+}
+.open {
+
+    & > span {
+        @extend .btnSpan;
+        &:first-child {
+            transform: translateY(6px) rotate(150deg);
+            margin: 0 atuo;
+          }
+        &:nth-child(2) {
+          transform-origin: left;
+          transform:scale(0) translateX(-30px);
+          
+            }
+        &:nth-child(3) {
+                transform: translateY(-6px) rotate(-150deg);
+                margin-bottom: 0;
+              }
+
+
+    }
+    
+}

@@ -1,0 +1,42 @@
+
+.btn {
+    border-radius: 10%;
+    border: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btnSpan {
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 2px;
+    margin: ;
+    transition: 0.7s;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0;        
+    }
+    
+    
+}
+.open {
+    @extend .btnSpan;
+    
+    &:first-child {
+        transform: translateY(6px) rotate(150deg);
+        margin: 0 atuo;
+      }
+    &:nth-child(2) {
+        transform-origin: left;
+        transform:scale(0) translateX(-30px);
+        
+      }
+    &:nth-child(3) {
+        transform: translateY(-6px) rotate(-150deg);
+        margin-bottom: 0;
+      }
+}

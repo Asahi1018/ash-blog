@@ -1,0 +1,43 @@
+
+.btn {
+    border-radius: 10%;
+    border: none;
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-li {
+    font-size: 25px;
+}
+
+
+.btnSpan {
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 2px;
+    margin: 0 auto 5px auto;
+    transition: 0.7s;
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+    
+    
+}
+
+.open {
+    @extend .btnSpan;
+    &:first-child {
+        transform: translateY(6px) rotate(150deg);
+      }
+    &:nth-child(2) {
+        display: none;
+      }
+    &:nth-child(3) {
+        transform: translateY(-6px) rotate(-150deg);
+        margin-bottom: 0;
+      }
+}

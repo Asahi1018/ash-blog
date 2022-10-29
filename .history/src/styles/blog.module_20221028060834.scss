@@ -1,0 +1,20 @@
+.header {
+    background-color: #EEEEEE;
+    font-size: 16px;
+    padding: 20px 0;
+    text-align: center;
+    & .title {
+        line-height: 1.2;
+        font-size: 2em;
+    }
+}
+
+.contents {
+    font-size: 16px;
+    & > h1 {
+        font-size: 2em;
+    }
+    & > h2 {
+        font-size: ;
+    }
+}
