@@ -8,9 +8,9 @@ export default function Home({blog}) {
         <h1 className={styles.title}>Welcome to Ash Blog!</h1>
         <p className={styles.sub_title}>~高校生の実態を丸裸~</p>
       </div>
-      <div>
-        <h2>Blog List</h2>
-        <ul>
+      <div className={styles.list_container}>
+        <h2 className={styles.h2}>Blog List</h2>
+        <ul className={styles.ul}>
         {blog.contents.map(_blog => {
         return (  
         <li key={_blog.id}>

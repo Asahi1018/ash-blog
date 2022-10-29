@@ -1,8 +1,12 @@
+@use 'src/styles/mixin/mq' as *;
 .title_container {
     background-color: black;
     color: white;
     & .h1 {
         white-space: pre-wrap;
         border: 2px dotted white;
+        @include mq() {
+            font-size: 3rem;
+        }
     }
 }

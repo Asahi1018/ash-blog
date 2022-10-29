@@ -1,21 +1,42 @@
-.title {
-    text-align: center;
-    font-size: 1.7em;
-    
-}
+@use 'src/styles/mixin/mq' as *;
 
 .title_container {
-    background-color: white;
-    border-radius: 25% 10%;
-    width: 90%;
-    padding: 20px 0;
-    margin: auto;
-    margin-top: 30px;
-}
+  background-color: white;
+  border-radius: 25% 10%;
+  width: 90%;
+  padding: 20px 0;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 30px;
+  }
 
-.sub_title {
+  & .title {
+    text-align: center;
+    font-size: 1.7em;
+  }
+
+  .sub_title {
     text-align: center;
     font-size: 0.7em;
     opacity: 0.7;
     margin: 0;
+  }
+}
+
+.list_container {
+    font-size: 18px;
+    @include mq(md) {
+        font-size: 22px;
+        padding: 0 1em;
+    }
+
+    & .h2 {
+        font-size: 1.7em;
+    }
+
+    & .ul {
+        font-size: 1em;
+    }
 }

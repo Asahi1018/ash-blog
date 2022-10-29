@@ -32,7 +32,8 @@ export default function Blog ({blog}) {
             <Time pubTime={blog.publishedAt} updateTime={blog.updatedAt}/>
         </div>
         <div className={styles.contents} dangerouslySetInnerHTML={{__html:`${blog.body}`}}></div>
-        <Link href="/posts"> ←Back to Home </Link>
+        <Link href="/posts"><a className={styles.link}>←Back to Home</a></Link>
+        
     
     </>
         

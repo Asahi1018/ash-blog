@@ -8,7 +8,7 @@ const Layout =  ({children}) => {
     const menuOpen = useMenuOpen(); 
     const dispatch = useMenuOpDispatch();
     return (
-        <>
+        <div className={styles.global_container}>
             <SideMenu/>
             <Header/>
             <div onClick={() => {
@@ -18,7 +18,7 @@ const Layout =  ({children}) => {
             <div className={styles.main}>{children}</div>
             
             
-        </>
+        </div>
 
     )
 };

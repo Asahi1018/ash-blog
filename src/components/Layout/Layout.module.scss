@@ -1,3 +1,7 @@
+@use 'src/styles/mixin/mq' as *;
+
+
+
 .mask {
     position: fixed;
     top: 0;
@@ -18,4 +22,8 @@
     background-color: rgb(230, 223, 223);
     padding-top: 60px;
     font-size: 1rem;
+    @include mq(md) {
+        padding-top: 71px;
+    }
+    
 }

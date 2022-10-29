@@ -5,8 +5,8 @@ export default function AppHome () {
     <>
         <div className={styles.title_container}>
             <h1 className={styles.h1}>
-                {'Welcome to\nAsh Web App! \nHello World!'}
-                テストです！！！ここはHomeです！！
+                {'Welcome to\nAsh Web App! \nHello World!\nここはHomeです！！'}
+                
             </h1>
         </div> 
     </>
